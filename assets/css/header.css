@@ -1,0 +1,113 @@
+.header__navbar {
+    position: relative;
+    transition: max-height .5s ease-in;
+    z-index: 50;
+}
+
+.header__navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__text {
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+}
+
+.header__text, .header__nav a {
+    text-decoration: none;
+    letter-spacing: .2rem;
+    color: #f7f7f7;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.header__nav a {
+    transition: 0.8s ease;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.header__nav a:hover, .header__nav a:active {
+    color: #005778;
+}
+
+.header__nav-container {
+    background-color: rgb(53, 53, 53);
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header__btn {
+    border: none;
+    color: #f7f7f7;
+    background-color: rgb(53, 53, 53, .7);
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 950px) {
+    .header {
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        position: relative;
+    }
+    .header__nav-container {
+        background-color: #f7f7f7;
+        padding: 0;
+        display: flex;
+        /* box-shadow: 1px 3px 3px #35353550; */
+    }
+    .header__nav-container a {
+        padding-left: 4.3rem;
+    }
+    .header__text {
+        width: 100%;
+        background-color: #353535;
+        padding: 1rem;
+        color: #f7f7f7;
+    }
+    .header__navbar {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        text-align: end;
+        padding-right: 3rem;
+    }
+    .header__nav {
+        display: inline-block;
+        padding: 0 .5rem;
+    }
+    .header__nav a {
+        color: #353535;
+        font-weight: 600;
+        transition: none;
+        display: inline-block;
+        padding: 0;
+        height: 100%;
+    }
+    .header__nav ul {
+        padding: 5rem 0;
+    }
+    .header__nav a:hover, .header__nav a:active {
+        color: #005778;
+    }
+    .header__btn {
+        display: none;
+    }
+    .nav-desc {
+        width: 30%;
+    }
+    .information__info {
+        width: 0%;
+    }
+}

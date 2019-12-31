@@ -1,0 +1,111 @@
+#back {
+  height: 75vh;
+  background-color: #353535;
+  width: 55%;
+  position: relative;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  position: absolute;
+  top: 40%;
+  width: 85%;
+  border-radius: 50%;
+  max-width: 23rem;
+  transform: translateY(-50%);
+}
+
+.main__content {
+  margin: 1.5rem 0;
+}
+
+.main__content h1,
+.experiencia-text {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main__content p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 1.5rem 0;
+}
+
+.main__content div {
+  display: flex;
+  justify-content: center;
+}
+
+.exper {
+  padding: 0 0 4rem 0;
+}
+
+.exper h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 4rem 0 5rem 0;
+}
+
+.exper h2,
+.exper h3 {
+  color: #005778;
+}
+
+.exper__content div {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 950px) {
+  .header-large-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #back {
+    width: 22.3%;
+    height: 100vh;
+  }
+  img {
+    border-radius: 50%;
+    max-width: 23rem;
+    transform: translateY(-30%);
+    left: 9.5%;
+  }
+  .main__content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .main__content h1 {
+    margin: 0;
+    width: 20%;
+    text-align: start;
+  }
+  .main__content p {
+    line-height: 1.5;
+  }
+  .ctn {
+    width: 50%;
+  }
+  .exper__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column-gap: 5rem;
+  }
+  .exper__content div {
+    margin: 0;
+  }
+}
